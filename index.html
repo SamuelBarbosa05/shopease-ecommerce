@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase | E-commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>ShopEase</h1>
+      <p>E-commerce moderno com JavaScript puro</p>
+    </div>
+
+    <button class="cart-button" id="openCart">
+      Carrinho <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="tag">Frontend Project</span>
+        <h2>Produtos selecionados para você</h2>
+        <p>Busque, filtre e adicione produtos ao carrinho em uma experiência simples e responsiva.</p>
+      </div>
+    </section>
+
+    <section class="filters">
+      <input type="text" id="searchInput" placeholder="Buscar produto..." />
+
+      <select id="categoryFilter">
+        <option value="all">Todas as categorias</option>
+        <option value="tecnologia">Tecnologia</option>
+        <option value="moda">Moda</option>
+        <option value="casa">Casa</option>
+      </select>
+    </section>
+
+    <section class="products" id="productsList"></section>
+  </main>
+
+  <aside class="cart" id="cart">
+    <div class="cart-header">
+      <h2>Meu carrinho</h2>
+      <button id="closeCart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="total">
+        <span>Total:</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </div>
+
+      <button class="checkout-button">Finalizar compra</button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
